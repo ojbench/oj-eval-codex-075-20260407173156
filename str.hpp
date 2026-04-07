@@ -94,6 +94,9 @@ public:
     char &operator[](std::size_t pos) {
         return data_[pos];
     }
+    const char &operator[](std::size_t pos) const {
+        return data_[pos];
+    }
 
     // Length
     std::size_t len() const { return size_; }
